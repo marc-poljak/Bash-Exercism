@@ -6,7 +6,7 @@ Each exercise contains a test file.
 Run the tests using the `bats` program.
 
 ```bash
- bats two_fer.bats
+bats error_handling.bats
 ```
 
 `bats` will need to be installed.
@@ -56,7 +56,7 @@ bats
 
 ## Submitting your solution
 
-You can submit your solution using the `exercism submit two_fer.sh` command.
+You can submit your solution using the `exercism submit error_handling.sh` command.
 This command will upload your solution to the Exercism website and print the solution page's URL.
 
 It's possible to submit an incomplete solution which allows you to:
