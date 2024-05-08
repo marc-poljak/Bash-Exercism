@@ -6,7 +6,7 @@ Each exercise contains a test file.
 Run the tests using the `bats` program.
 
 ```bash
-bats hello_world.bats
+bats acronym.bats
 ```
 
 `bats` will need to be installed.
