@@ -2,17 +2,16 @@
 
 main () {
     local sentence="$1"
-    local alphabet="abcdefghijklmnopqrstuvwxyz"
     local unique_chars=""
 
     # Convert the sentence to lowercase to make it case insensitive
-    sentence="${sentence,,}"
+    sentence=$(echo "$sentence" | tr '[:upper:]' '[:lower:]')
 
     # Iterate over each character in the sentence
     for ((i=0; i<${#sentence}; i++)); do
         char="${sentence:$i:1}"
         # Check if the character is a letter and if it hasn't been counted yet
-        if [[ "$char" =~ [a-z] && ! "$unique_chars" =~ "$char" ]]; then
+        if [[ $char =~ [a-z] && ! "$unique_chars" =~ $char ]]; then
             unique_chars+="$char"
         fi
     done
